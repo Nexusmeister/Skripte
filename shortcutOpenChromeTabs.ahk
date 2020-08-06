@@ -1,0 +1,1 @@
+^!c:: Run, C:\Users\wn00121337\Skripte\openStandardChromeTabs.ahk
