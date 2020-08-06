@@ -1,0 +1,1 @@
+FileCopyDir, "D:\Dokumente\DHBW\OneDrive\OneNote Notebooks\PA_II\", "D:\RKaltenb\WIS_Ausbildung\PA I, PA II, BA\PA II\Notizen\PA_II\", 1
