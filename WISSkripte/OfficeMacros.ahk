@@ -20,7 +20,7 @@ Menu, Tray, Icon, shell32.dll, 283 ; this changes the tray icon to a little keyb
 ; Strg-Shortcuts
 ^!c:: RufeAlleTabsAuf() ; Browser öffnen [Strg + Alt + c]
 ^+o:: SchliesseWindows() ; Schließt alle aktiven Fenster (außer Task Manager) [Strg + Shift + o]
-^!n:: CopyPassword() ; Hole BitLocker-PW [Strg + Shift + n]
+^!n:: CopyPassword() ; Hole BitLocker-PW [Strg + Alt + n]
 
 
 ; Alt-Shorcuts
