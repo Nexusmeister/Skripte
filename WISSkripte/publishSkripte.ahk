@@ -1,4 +1,3 @@
-#NoEnv
 SendMode Input
 #InstallKeybdHook
 #UseHook On
@@ -8,5 +7,8 @@ Menu, Tray, Icon, shell32.dll, 283 ; this changes the tray icon to a little keyb
 #MaxHotkeysPerInterval 2000
 #WinActivateForce ;https://autohotkey.com/docs/commands/_WinActivateForce.htm
 
-
-FileCopyDir, %A_WorkingDir%, C:\Users\wn00121337\Skripte, 1
+PublishSkripte()
+{
+    EnvGet, vProfile, USERPROFILE
+    FileCopyDir, %A_WorkingDir%, %vProfile%\Skripte, 1
+}

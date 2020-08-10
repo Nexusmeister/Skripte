@@ -11,6 +11,7 @@ Menu, Tray, Icon, shell32.dll, 283 ; this changes the tray icon to a little keyb
 #Include, %A_ScriptDir%\killAllWindows.ahk
 #Include, %A_ScriptDir%\openStandardChromeTabs.ahk
 #Include, %A_ScriptDir%\CopyMasterPWFromKeePass.ahk 
+#Include, %A_ScriptDir%\publishSkripte.ahk
 
 ; Funktioniert beim Start von Windows nicht
 ; Run, "VSMacro.ahk" ; Wir starten von hier das VS-Makro Skript
@@ -20,8 +21,8 @@ Menu, Tray, Icon, shell32.dll, 283 ; this changes the tray icon to a little keyb
 ; Strg-Shortcuts
 ^!c:: RufeAlleTabsAuf() ; Browser öffnen [Strg + Alt + c]
 ^+o:: SchliesseWindows() ; Schließt alle aktiven Fenster (außer Task Manager) [Strg + Shift + o]
-^!n:: CopyPassword() ; Hole BitLocker-PW [Strg + Shift + n]
-
+^!n:: CopyPassword() ; Hole BitLocker-PW [Strg + Alt + n]
+^!b:: PublishSkripte() ; Veröffentlicht alle Skripte [Strg + Alt + b]
 
 ; Alt-Shorcuts
 !down::WinMinimize, A
