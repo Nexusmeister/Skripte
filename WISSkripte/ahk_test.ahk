@@ -1,4 +1,10 @@
 SetTitleMatchMode,2
+
+#NoEnv
+EnvGet, vUserProfile, USERPROFILE
+MsgBox, % vUserProfile
+
+
 if(winactive("Microsoft Visual Studio"))
 {
 	::,,::
