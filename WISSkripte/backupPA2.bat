@@ -11,7 +11,7 @@ START 7z.exe a "D:\Dokumente\DHBW\OneDrive\DH-Wirtschaftsinformatik\Projektarbei
 cd "C:\Users\wn00121337\AppData\Local\Microsoft\OneDrive"
 START OneDrive.exe
 
-TIMEOUT /T 240
+TIMEOUT /T 300
 cd /D "C:\Users\wn00121337\Skripte"
 call killOneDriveAfterBackup.bat
 
