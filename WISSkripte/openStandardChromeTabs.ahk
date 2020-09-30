@@ -3,6 +3,7 @@ RufeAlleTabsAuf()
 	RufeStandardTabsAuf()
 	Sleep, 1500
 	RufeZusatzTabsAuf() ;Hier können immer alle Zusatztabs rein, die temporär benötigt werden
+	MeldeAnTfsAn()
 }
 
 RufeStandardTabsAuf()
@@ -23,4 +24,12 @@ RufeStandardTabsAuf()
 RufeZusatzTabsAuf()
 {
 	Run, chrome.exe "https://confluence.wgn.wuerth.com/display/~wn00121337/PA+II" " --new-tab"
+}
+
+MeldeAnTfsAn()
+{
+	sleep, 500 ; Kurz warten, bevor wir Makro durchführen
+	SendInput, ^4
+	sleep, 250
+	Send, {Enter}
 }
