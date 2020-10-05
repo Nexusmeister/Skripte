@@ -28,7 +28,11 @@ RufeZusatzTabsAuf()
 
 MeldeAnTfsAn()
 {
+	SetTitleMatchMode, 2
+	WinActivate, Google Chrome
+
 	sleep, 500 ; Kurz warten, bevor wir Makro durchführen
+
 	SendInput, ^5
 	sleep, 250
 	Send, {Enter}
