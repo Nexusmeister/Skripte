@@ -29,7 +29,7 @@ RufeZusatzTabsAuf()
 MeldeAnTfsAn()
 {
 	sleep, 500 ; Kurz warten, bevor wir Makro durchführen
-	SendInput, ^4
+	SendInput, ^5
 	sleep, 250
 	Send, {Enter}
 }

@@ -10,5 +10,5 @@ Menu, Tray, Icon, shell32.dll, 283 ; this changes the tray icon to a little keyb
 PublishSkripte()
 {
     EnvGet, vProfile, USERPROFILE
-    FileCopyDir, %A_WorkingDir%, %vProfile%\Skripte, 1
+    FileCopyDir, D:\gitpersonal\skripte\WISSkripte, %vProfile%\Skripte, 1
 }
