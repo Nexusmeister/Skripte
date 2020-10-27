@@ -23,7 +23,7 @@ RufeStandardTabsAuf()
 
 RufeZusatzTabsAuf()
 {
-	Run, chrome.exe "https://confluence.wgn.wuerth.com/display/~wn00121337/PA+II" " --new-tab"
+	Run, chrome.exe "https://reportingwis.wgs.wuerth.com/Reports/powerbi/Power20Reports/KMS/Fehlerprotokoll" " --new-tab"
 }
 
 MeldeAnTfsAn()
@@ -31,7 +31,7 @@ MeldeAnTfsAn()
 	SetTitleMatchMode, 2
 	WinActivate, Google Chrome
 
-	sleep, 500 ; Kurz warten, bevor wir Makro durchführen
+	sleep, 1500 ; Kurz warten, bevor wir Makro durchführen
 
 	SendInput, ^5
 	sleep, 250
