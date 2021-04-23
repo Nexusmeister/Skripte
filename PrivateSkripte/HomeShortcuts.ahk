@@ -16,7 +16,7 @@ Menu, Tray, Icon, shell32.dll, 16 ; this changes the tray icon to a computer!
 ; ################################################################################################################################
 ; Shortcut-Section
 ; Win-Shortcuts
-#y:: OeffneSemVier() ; Öffnet 4.Semester Clouddrive [Win + y]
+;#y:: OeffneSemVier() ; Öffnet 4.Semester Clouddrive [Win + y]
 
 ; Alt-Shortcuts
 !Down::WinMinimize, A ; Minimiert jegliches aktives Fenster [Alt + Arrow Down]
