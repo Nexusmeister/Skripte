@@ -1,6 +1,6 @@
 clear()
 -- Hier die ID des Geräts eingeben, das als MakroPad dienen soll
-local makroId = '324B23A8'
+local makroId = '38F2FFE7'
 
 -- Sicherheitsprüfung, ob ID geändert worden ist
 if keyboardIdentifier == '0000AAA' then
@@ -27,7 +27,7 @@ lmc_minimize()
 -- define callback for whole device
 lmc_set_handler('makros',function(button, direction)
    if (direction == 1) then
-        lmc_send_keys('{left}{del}')
+        --lmc_send_keys('{left}{del}')
      return
    end  -- ignore down
  if (button == 13) then
@@ -36,6 +36,7 @@ lmc_set_handler('makros',function(button, direction)
 
     elseif (button == 97) then
     lmc_send_keys('^{NUM1}', 50)
+	lmc_spawn("explorer", "F:\\Tools\\Skripte\\getMicInfo.ahk")
     print('NUM1 ->')
 
     elseif (button == 98) then
@@ -63,11 +64,13 @@ lmc_set_handler('makros',function(button, direction)
     print('NUM7 ->')
 
     elseif (button == 104) then
-    lmc_send_keys('#^{LEFT}', 50)
+    --lmc_send_keys('#^{LEFT}', 50)
+    lmc_spawn("explorer", "F:\\Tools\\Skripte\\switch_desktop_left.ahk")
     print('NUM8 ->')
 
     elseif (button == 105) then
-    lmc_send_keys('#^{RIGHT}', 50)
+    --lmc_send_keys('#^{RIGHT}', 50)
+    lmc_spawn("explorer", "F:\\Tools\\Skripte\\switch_desktop_right.ahk")
     print('NUM9 ->')
 
     elseif (button == 111) then
@@ -79,15 +82,18 @@ lmc_set_handler('makros',function(button, direction)
     print('NUMMULTI -> Mute TS3 Mic')
 
     elseif (button == 109) then
-    lmc_send_keys('#^{F4}', 50)        -- Remove Desktop
+    --lmc_send_keys('#^{F4}', 50)        -- Remove Desktop
+    lmc_spawn("explorer", "F:\\Tools\\Skripte\\remove_desktop.ahk")
     print('NUMMINUS ->')
 
     elseif (button == 107) then
-    lmc_send_keys('#^d', 50)       -- Add Desktop
+    --lmc_send_keys('#^d', 50)       -- Add Desktop
+    lmc_spawn("explorer", "F:\\Tools\\Skripte\\add_desktop.ahk")
     print('NUMPLUS ->')
 
     elseif (button == 8) then
-    lmc_send_keys('^+{BACKSPACE}', 50)      -- Mute Discord complete
+    --lmc_send_keys('^+{BACKSPACE}', 50)      -- Mute Discord complete
+    lmc_spawn("explorer", "F:\\Tools\\Skripte\\mute_discord.ahk")
     print('BACKSPACE -> Mute Discord')
 
     elseif (button == 110) then

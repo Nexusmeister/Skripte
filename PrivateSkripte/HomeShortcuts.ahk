@@ -11,7 +11,7 @@ Menu, Tray, Icon, shell32.dll, 16 ; this changes the tray icon to a computer!
 ; ################################################################################################################################
 ; Include-Section
 #Include, %A_ScriptDir%\OpenSemester4InExplorer.ahk
-
+#Include, %A_ScriptDir%\toggle_mic.ahk
 
 ; ################################################################################################################################
 ; Shortcut-Section
