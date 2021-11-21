@@ -31,7 +31,7 @@ lmc_set_handler('makros',function(button, direction)
      return
    end  -- ignore down
  if (button == 13) then
-    lmc_send_keys('^{ENTER}', 50)
+    lmc_send_keys('^+{ESC}', 50)
     print('Enter ->')
 
     elseif (button == 97) then
